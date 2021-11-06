@@ -1,3 +1,4 @@
+// import { BaseComponent } from 'https://cdn.jsdelivr.net/gh/symbiotejs/symbiote.js/core/BaseComponent.js';
 import { BaseComponent } from 'https://symbiotejs.github.io/symbiote.js/core/BaseComponent.js';
 
 class MyApp extends BaseComponent {
