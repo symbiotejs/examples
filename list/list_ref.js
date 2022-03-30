@@ -4,7 +4,7 @@ import { BaseComponent } from '../submodules/symbiote/core/BaseComponent.js';
 class ListItem extends BaseComponent {
 
   init$ = {
-    text: 'Initial text...',
+    text: '',
     remove: () => {
       this.remove();
     },
@@ -18,12 +18,16 @@ class ListItem extends BaseComponent {
     this.$.text = '';
   };
 
+  initCallback() {
+    this.ref.edit.focus();
+  }
+
 }
 
 ListItem.template = /* html */ `
   <input ref="checkbox" type="checkbox">
-  <div contenteditable="true" set="textContent: text"></div>
-  <button set="onclick: remove">❌</button>
+  <div ref="edit" contenteditable="true" set="textContent: text"></div>
+  <button set="onclick: remove">Remove Item</button>
 `;
 ListItem.reg('list-item');
 
