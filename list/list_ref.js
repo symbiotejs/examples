@@ -23,7 +23,7 @@ class ListItem extends BaseComponent {
 ListItem.template = /* html */ `
   <input ref="checkbox" type="checkbox">
   <div contenteditable="true" set="textContent: text"></div>
-  <button set="onclick: remove">X</button>
+  <button set="onclick: remove">❌</button>
 `;
 ListItem.reg('list-item');
 
