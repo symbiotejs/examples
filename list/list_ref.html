@@ -1,0 +1,24 @@
+<script src="./list_ref.js" type="module"></script>
+<style>
+  button {
+    white-space: nowrap;
+    margin-left: 10px;
+  }
+  list-item {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: min-content auto min-content;
+    border-bottom: 1px solid currentColor;
+  }
+  list-item > [type="checkbox"] {
+    margin-right: 10px;
+  }
+  list-item:hover {
+    background-color: rgba(0, 0, 0, .05);
+  }
+  my-app > .toolbar {
+    padding: 10px;
+    display: flex;
+  }
+</style>
+<my-app></my-app>

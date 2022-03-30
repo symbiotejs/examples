@@ -29,8 +29,8 @@ class StyledComponent extends BaseComponent {
 class MyApp extends StyledComponent {}
 
 MyApp.template = /*html*/ `
-<div css="first_name" set="textContent: firstName"></div>
-<div css="second_name" set="textContent: secondName"></div>
+<div css="first_name">{{firstName}}</div>
+<div css="second_name">{{secondName}}</div>
 `;
 
 MyApp.addStyles({
