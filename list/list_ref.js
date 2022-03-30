@@ -1,19 +1,12 @@
 import { BaseComponent } from '../submodules/symbiote/core/BaseComponent.js';
 
-const itemSet = new Set();
-
-function remove(item) {
-  itemSet.delete(item);
-  item.remove();
-};
-
 //// Item element:
 class ListItem extends BaseComponent {
 
   init$ = {
     text: 'Initial text...',
     remove: () => {
-      remove(this);
+      this.remove();
     },
   };
 
@@ -37,29 +30,26 @@ ListItem.reg('list-item');
 //// Application element:
 class MyApp extends BaseComponent {
 
-  sync = () => {
-    itemSet.forEach((item) => {
-      this.ref.list_wrapper.appendChild(item);
-    });
-  };
+  get items() {
+    return [...this.ref.list_wrapper.children];
+  }
 
   init$ = {
     heading: 'List heading:',
     addItem: () => {
-      itemSet.add(new ListItem());
-      this.sync();
+      this.ref.list_wrapper.appendChild(new ListItem());
     },
     clearChecked: () => {
-      itemSet.forEach((item) => {
+      this.items.forEach((item) => {
         if (item.checked) {
           item.clear();
         }
       });
     },
     removeChecked: () => {
-      itemSet.forEach((item) => {
+      this.items.forEach((item) => {
         if (item.checked) {
-          remove(item);
+          item.remove();
         }
       });
     },
