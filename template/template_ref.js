@@ -1,4 +1,4 @@
-import { BaseComponent } from 'https://symbiotejs.github.io/symbiote.js/core/BaseComponent.js';
+import { BaseComponent } from '../submodules/symbiote/core/BaseComponent.js';
 
 // Direct template rendering form a string:
 

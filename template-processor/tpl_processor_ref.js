@@ -1,5 +1,5 @@
-import { BaseComponent } from 'https://symbiotejs.github.io/symbiote.js/core/BaseComponent.js';
-import { applyStyles } from 'https://symbiotejs.github.io/symbiote.js/utils/dom-helpers.js';
+import { BaseComponent } from '../submodules/symbiote/core/BaseComponent.js';
+import { applyStyles } from '../submodules/symbiote/utils/dom-helpers.js';
 
 class StyledComponent extends BaseComponent {
   /**
@@ -14,8 +14,10 @@ class StyledComponent extends BaseComponent {
     super(); 
     this.styles = this.constructor['__stylesObj'];
     this.addTemplateProcessor((fr) => {
+      /** @type {HTMLElement[]} */
+      // @ts-ignore
       let cssElArr = [...fr.querySelectorAll('[css]')];
-      cssElArr.forEach((/** @type {HTMLElement} */ el) => {
+      cssElArr.forEach((el) => {
         let cssName = el.getAttribute('css');
         applyStyles(el, this.styles[cssName]);
       });

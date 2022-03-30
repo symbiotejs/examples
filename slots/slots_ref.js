@@ -1,4 +1,4 @@
-import { BaseComponent } from 'https://symbiotejs.github.io/symbiote.js/core/BaseComponent.js';
+import { BaseComponent } from '../submodules/symbiote/core/BaseComponent.js';
 
 class MyApp extends BaseComponent {}
 

@@ -1,5 +1,5 @@
-import { BaseComponent } from 'https://symbiotejs.github.io/symbiote.js/core/BaseComponent.js';
-import { AppRouter } from 'https://symbiotejs.github.io/symbiote.js/core/AppRouter.js';
+import { BaseComponent } from '../submodules/symbiote/core/BaseComponent.js';
+import { AppRouter } from '../submodules/symbiote/core/AppRouter.js';
 
 AppRouter.createRouterData('router', {
   home: {

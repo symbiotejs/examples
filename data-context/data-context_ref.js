@@ -1,5 +1,5 @@
-import { BaseComponent } from 'https://symbiotejs.github.io/symbiote.js/core/BaseComponent.js';
-import { applyStyles } from 'https://symbiotejs.github.io/symbiote.js/utils/dom-helpers.js';
+import { BaseComponent } from '../submodules/symbiote/core/BaseComponent.js';
+import { applyStyles } from '../submodules/symbiote/utils/dom-helpers.js';
 
 const css = {
   display: 'inline-block',

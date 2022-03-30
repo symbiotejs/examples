@@ -1,4 +1,4 @@
-import { BaseComponent } from 'https://symbiotejs.github.io/symbiote.js/core/BaseComponent.js';
+import { BaseComponent } from '../submodules/symbiote/core/BaseComponent.js';
 
 class Com1 extends BaseComponent {}
 Com1.template = /*html*/ `<button>Component 1</button>`;
