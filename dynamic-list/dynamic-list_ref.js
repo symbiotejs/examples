@@ -28,10 +28,10 @@ TableRow.reg('table-row');
 class TableApp extends BaseComponent {
   init$ = {
     tableData: [],
-    buttonText: 'Generate table data',
+    buttonActionName: 'Generate',
     generateTableData: () => {
       this.set$({
-        buttonText: 'Update table data',
+        buttonActionName: 'Update',
       });
       let data = [];
       for (let i = 0; i < 1000; i++) {
@@ -57,7 +57,7 @@ TableApp.template = /*html*/ `
     border: 1px solid currentColor;
   }
 </style>
-<button set="onclick: generateTableData">{{buttonText}}</button>
+<button set="onclick: generateTableData">{{buttonActionName}} table data</button>
 <table repeat="tableData" repeat-item-tag="table-row"></table>
 `;
 TableApp.reg('table-app');
