@@ -4,7 +4,7 @@ import { BaseComponent } from '../submodules/symbiote/core/BaseComponent.js';
 class TableRow extends BaseComponent {
   init$ = {
     rowNum: 0,
-    text: '',
+    randomNum: 0,
     date: 0,
   }
 
@@ -19,7 +19,7 @@ class TableRow extends BaseComponent {
 
 TableRow.template = /*html*/ `
 <td>{{rowNum}}</td>
-<td>{{text}}</td>
+<td>Random number: {{randomNum}}</td>
 <td>{{date}}</td>
 `;
 TableRow.reg('table-row');
@@ -37,7 +37,7 @@ class TableApp extends BaseComponent {
       for (let i = 0; i < 1000; i++) {
         data.push({
           rowNum: i + 1,
-          text: 'TEXT: ' + Math.random() * 100,
+          randomNum: Math.random() * 100,
           date: Date.now(),
         });
       }
