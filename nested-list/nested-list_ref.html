@@ -1,0 +1,28 @@
+<script src="./nested-list_ref.js" type="module"></script>
+
+<style>
+  nest-app {
+    display: block;
+  }
+  div {
+    padding: 6px;
+    margin: 10px;
+    border: 1px solid currentColor;
+    background-color: rgba(0, 0, 0, .05);
+  }
+</style>
+
+<nest-app>
+  <button set="onclick: generateData">{{buttonActionName}} table data</button>
+  <div repeat="data">
+    <div>{{name}}</div>
+    <div repeat="nestedData">
+      <div>{{nestedName}}</div>
+      <div>{{nestedText}}</div>
+      <div repeat="nestedData">
+        <div>{{nestedName}}</div>
+        <div>{{nestedText}}</div>
+      </div>
+    </div>
+  </div>
+</nest-app>
