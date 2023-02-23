@@ -1,5 +1,4 @@
-import { BaseComponent } from '../submodules/symbiote/core/BaseComponent.js';
-import { AppRouter } from '../submodules/symbiote/core/AppRouter.js';
+import { BaseComponent, AppRouter } from 'https://esm.sh/@symbiotejs/symbiote';
 
 AppRouter.createRouterData('router', {
   home: {

@@ -1,5 +1,4 @@
-import { BaseComponent } from '../submodules/symbiote/core/BaseComponent.js';
-import { applyStyles } from '../submodules/symbiote/utils/dom-helpers.js';
+import { BaseComponent, applyStyles } from 'https://esm.sh/@symbiotejs/symbiote';
 
 class StyledComponent extends BaseComponent {
   /**

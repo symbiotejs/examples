@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@symbiotejs/symbiote": "^1.11.6"
+  }
+}

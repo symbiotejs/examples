@@ -1,4 +1,4 @@
-import { BaseComponent } from '../submodules/symbiote/core/BaseComponent.js';
+import { BaseComponent } from 'https://esm.sh/@symbiotejs/symbiote';
 
 //// Dynamic list item component:
 class TableRow extends BaseComponent {

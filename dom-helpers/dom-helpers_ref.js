@@ -1,5 +1,4 @@
-import { create } from '../submodules/symbiote/utils/dom-helpers.js';
-import { Data } from '../submodules/symbiote/core/Data.js';
+import { create, Data } from 'https://esm.sh/@symbiotejs/symbiote';
 
 let state = new Data({
   schema: {
