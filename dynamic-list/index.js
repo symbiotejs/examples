@@ -46,17 +46,6 @@ class TableApp extends BaseComponent {
   }
 }
 TableApp.template = /*html*/ `
-<style>
-  table-row {
-    display: table-row;
-  }
-  table-row[selected] {
-    background-color: rgba(255, 255, 0, .3);
-  }
-  td {
-    border: 1px solid currentColor;
-  }
-</style>
 <button set="onclick: generateTableData">{{buttonActionName}} table data</button>
 <table repeat="tableData" repeat-item-tag="table-row"></table>
 `;
