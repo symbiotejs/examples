@@ -1,4 +1,4 @@
-import { BaseComponent, applyStyles } from 'https://esm.sh/@symbiotejs/symbiote';
+import { BaseComponent, applyStyles } from 'https://esm.sh/@symbiotejs/symbiote@1.11.7';
 
 const css = {
   display: 'inline-block',

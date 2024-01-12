@@ -1,4 +1,4 @@
-import { BaseComponent } from 'https://esm.sh/@symbiotejs/symbiote';
+import { BaseComponent } from 'https://esm.sh/@symbiotejs/symbiote@1.11.7';
 
 // Direct template rendering form a string:
 

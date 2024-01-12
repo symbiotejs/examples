@@ -1,4 +1,4 @@
-import { BaseComponent } from 'https://esm.sh/@symbiotejs/symbiote';
+import { BaseComponent } from 'https://esm.sh/@symbiotejs/symbiote@1.11.7';
 
 class Com1 extends BaseComponent {}
 Com1.template = /*html*/ `<button>Component 1</button>`;

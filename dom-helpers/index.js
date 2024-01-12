@@ -1,4 +1,4 @@
-import { create, Data } from 'https://esm.sh/@symbiotejs/symbiote';
+import { create, Data } from 'https://esm.sh/@symbiotejs/symbiote@1.11.7';
 
 let state = new Data({
   schema: {
